@@ -219,6 +219,7 @@ def test_process_decoding_input(process_decoding_input):
 
         test_target_data = [[10, 20, 30], [40, 18, 23]]
         with tf.Session() as sess:
+            sess.run(tf.global_variables_initializer())
             test_dec_input = sess.run(dec_input, {target_data: test_target_data})
 
         assert test_dec_input[0][0] == target_vocab_to_int['<GO>'] and\
