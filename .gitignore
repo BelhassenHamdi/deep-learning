@@ -3,5 +3,6 @@
 # Ignore downloaded datasets
 embeddings/data/
 embeddings/text8.zip
-
+language-translation/language-translation.zip
+language-translation/old/
 .ipynb_checkpoints/
